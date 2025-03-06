@@ -9,7 +9,7 @@
     k3s = super.k3s_1_30.override {
       buildGoModule = args: super.buildGoModule (args // super.lib.optionalAttrs (args.pname != "k3s-cni-plugins" && args.pname != "k3s-containerd") {
         vendorHash = {
-          "sha256-fs9p6ywS5XCeJSF5ovDG40o+H4p4QmEJ0cvU5T9hwuA=" = "sha256-htanp0VOMadzoIyPUT8kOTSb58sz5DHlVBVGbY13ejU=";
+          "sha256-HTUFv8WBIDiBQ860p3RiROF+kDzBekvgBAr2TJh036E=" = "sha256-htanp0VOMadzoIyPUT8kOTSb58sz5DHlVBVGbY13ejU=";
         }.${args.vendorHash};
         # Source https://patch-diff.githubusercontent.com/raw/k3s-io/k3s/pull/9319.patch
         # Remove when merged
